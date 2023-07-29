@@ -91,6 +91,12 @@ module.exports = {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
+      transitionTimingFunction: {
+        'mobile-nav': 'cubic-bezier(.645,.045,.355,1)',
+      },
+      transitionDuration: {
+        55: '550ms',
+      },
     },
   },
   plugins: [
