@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: '1.5rem',
       screens: {
-        '2xl': '1400px',
+        '2xl': '1200px',
       },
     },
     fontFamily: {
@@ -25,22 +25,23 @@ module.exports = {
         text: 'var(--text)',
         pulse: {
           gray: {
-            100: 'var(--pulse-gray-100)',
-            200: 'var(--pulse-gray-200)',
-            400: 'var(--pulse-gray-400)',
-            500: 'var(--pulse-gray-500)',
-            600: 'var(--pulse-gray-600)',
-            700: 'var(--pulse-gray-700)',
-            800: 'var(--pulse-gray-800)',
+            100: 'var(--gray-100)',
+            200: 'var(--gray-200)',
+            400: 'var(--gray-400)',
+            500: 'var(--gray-500)',
+            600: 'var(--gray-600)',
+            700: 'var(--gray-700)',
+            800: 'var(--gray-800)',
           },
           green: {
-            100: 'var(--pulse-green-100)',
-            200: 'var(--pulse-green-200)',
-            400: 'var(--pulse-green-400)',
-            800: 'var(--pulse-green-800)',
+            100: 'var(--green-100)',
+            200: 'var(--green-200)',
+            400: 'var(--green-400)',
+            800: 'var(--green-800)',
+            'stop-color': 'var(--green-stop-color)',
           },
-          blue: 'var(--pulse-blue)',
-          red: 'var(--pulse-red)',
+          blue: 'var(--blue)',
+          red: 'var(--red)',
         },
         primary: {
           DEFAULT: 'var(--primary)',
@@ -92,5 +93,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
+  plugins: [
+    require('tailwindcss-animate'),
+    require('@tailwindcss/typography'),
+    require('tailwindcss-3d'),
+  ],
 }

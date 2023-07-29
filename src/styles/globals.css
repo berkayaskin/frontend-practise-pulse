@@ -23,7 +23,7 @@
     --card-foreground: #030712;
 
     /* Default border color */
-    --border: #e5e7eb;
+    --border: #d6dae5;
 
     /* Border color for inputs such as <Input />, <Select />, <Textarea /> */
     --input: #e5e7eb;
@@ -63,6 +63,7 @@
     --green-300: #1fe374;
     --green-400: #00ad6a;
     --green-800: #062c27;
+    --green-stop-color: #23ea76;
 
     --blue: #3ba0f2;
     --red: #f25c5c;
@@ -73,8 +74,15 @@
   * {
     @apply border-border;
   }
+
+  *,
+  :after,
+  :before {
+    @apply border-0 border-solid border-border;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply m-0 bg-background text-foreground;
   }
 
   h1,
@@ -107,10 +115,19 @@
   }
 
   a {
-    @apply font-bold text-pulse-green-400 no-underline hover:text-pulse-green-800;
+    @apply font-bold text-pulse-green-400 hover:text-pulse-green-800;
   }
 
   .wrapper {
     @apply mx-auto max-w-3xl p-6 sm:p-8;
+  }
+
+  .animated-button {
+    @apply inline-block h-auto border-2 border-pulse-green-400 px-4 py-1 leading-normal hover:!text-pulse-green-400 hover:shadow-[-5px_5px_#00ad6a] hover:translate-x-[5px] hover:translate-y-[-5px] hover:translate-z-0;
+  }
+
+  .animated-button:before {
+    @apply absolute bottom-[-2px] left-[-2px] right-[-2px] top-[-2px] hidden transform-style-3d translate-x-[-5px] translate-y-[5px] translate-z-[-1px] hover:block;
+    content: '';
   }
 }
