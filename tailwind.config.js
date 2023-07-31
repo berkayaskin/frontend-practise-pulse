@@ -97,6 +97,12 @@ module.exports = {
       transitionDuration: {
         55: '550ms',
       },
+      lineHeight: {
+        'tighter': '1.15',
+      },
+      letterSpacing: {
+        'tightest': '-0.1em',
+      },
     },
   },
   plugins: [
