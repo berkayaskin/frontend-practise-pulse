@@ -72,15 +72,15 @@ export const pricingBlockList: PricingBlockList = [
 
 export type ClientFeedback = {
   client: string
-  quote: string
+  feedback: string
   image: string
 }
 
 export const clientFeedback: ClientFeedback = {
   client: 'Subvert Marketing, Inc',
-  quote:
+  feedback:
     '“Pulse is worth every penny because it empowers business owners with critical financial insight and knowledge.”',
-  image: '/images/pricing-page/client.png',
+  image: '/assets/images/pricing-page/client.png',
 }
 
 export type FAQ = {
