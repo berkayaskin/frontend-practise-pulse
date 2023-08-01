@@ -55,8 +55,8 @@
     --gray-200: #f2f3f3;
     --gray-400: #dadbdc;
     --gray-500: #a9aaae;
-    --gray-600: #6b6c70;
-    --gray-700: #83858a;
+    --gray-600: #83858a;
+    --gray-700: #464951;
     --gray-800: #080c16;
 
     --green-100: #eafaf1;
@@ -116,7 +116,7 @@
   }
 
   .h2 {
-    @apply mb-6 text-3xl leading-tighter md:text-4xl lg:text-5xl;
+    @apply mb-6 text-3xl leading-tight md:text-4xl lg:text-5xl;
   }
 
   .h3 {
@@ -124,7 +124,7 @@
   }
 
   .h4 {
-    @apply text-xl leading-tighter;
+    @apply text-xl leading-tight;
   }
 
   .h5 {

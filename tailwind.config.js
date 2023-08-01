@@ -1,4 +1,8 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const {
+  fontFamily,
+  lineHeight,
+  letterSpacing,
+} = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -15,7 +19,22 @@ module.exports = {
     fontFamily: {
       sans: ['var(--font-sans)', ...fontFamily.sans],
     },
+    lineHeight: {
+      ...lineHeight,
+      tight: '1.15',
+      snug: '1.3',
+    },
+    letterSpacing: {
+      ...letterSpacing,
+      tightest: '-2px',
+      tighterer: '-1.5px',
+      tighter: '-.5px',
+      widest: '1px',
+    },
     extend: {
+      screens: {
+        xs: '320px',
+      },
       colors: {
         border: 'var(--border)',
         input: 'var(--input)',
@@ -36,6 +55,7 @@ module.exports = {
           green: {
             100: 'var(--green-100)',
             200: 'var(--green-200)',
+            300: 'var(--green-300)',
             400: 'var(--green-400)',
             800: 'var(--green-800)',
             'stop-color': 'var(--green-stop-color)',
@@ -96,12 +116,6 @@ module.exports = {
       },
       transitionDuration: {
         55: '550ms',
-      },
-      lineHeight: {
-        'tighter': '1.15',
-      },
-      letterSpacing: {
-        'tightest': '-0.1em',
       },
     },
   },
