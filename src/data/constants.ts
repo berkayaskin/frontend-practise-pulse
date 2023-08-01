@@ -1,2 +1,2 @@
-export const APP_NAME = 'next-starter-tailwind'
-export const REPO_NAME = `berkayaskin/${APP_NAME}`
+export const APP_NAME: string = 'next-starter-tailwind'
+export const REPO_NAME: string = `berkayaskin/${APP_NAME}`

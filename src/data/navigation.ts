@@ -1,4 +1,13 @@
-export function navigation(segment: string | null) {
+type NavigationItem = {
+  name: string
+  href: string
+  current: boolean
+  mobileOnly: boolean
+}
+
+type NavigationList = NavigationItem[]
+
+export function navigation(segment: string | null): NavigationList {
   return [
     {
       name: 'Features',
