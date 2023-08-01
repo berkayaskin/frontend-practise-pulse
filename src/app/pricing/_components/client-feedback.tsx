@@ -1,4 +1,4 @@
-import { clientFeedback, type ClientFeedback } from '@/data/pricing-page'
+import { clientFeedback } from '@/data/pricing-page'
 import Image from 'next/image'
 
 const ClientFeedback = () => {
