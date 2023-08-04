@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const ClientFeedback = () => {
   return (
-    <div className="container flex justify-center py-12 lg:py-24">
+    <section className="container flex justify-center py-12 lg:py-24">
       <div className="w-2/3 text-center">
         <Image
           src={clientFeedback.image}
@@ -19,7 +19,7 @@ const ClientFeedback = () => {
           {clientFeedback.client}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 export default ClientFeedback

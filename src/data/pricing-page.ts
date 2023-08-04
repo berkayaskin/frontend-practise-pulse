@@ -1,9 +1,9 @@
-export type HeroSection = {
+export type Hero = {
   title: string
   subtitle: string
 }
 
-export const heroSection: HeroSection = {
+export const hero: Hero = {
   title: 'Try Pulse free for\n30 days.',
   subtitle:
     'See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse absolutely free for 30 days.',

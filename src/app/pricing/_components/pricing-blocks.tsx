@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const PricingBlocks = () => {
   return (
-    <div className="container">
+    <section className="container">
       <div className="-mx-4 lg:flex lg:items-center">
         {pricingBlockList.map((item: PricingBlockItem) =>
           item.name === 'Basics' ? (
@@ -107,7 +107,7 @@ const PricingBlocks = () => {
           )
         )}
       </div>
-    </div>
+    </section>
   )
 }
 
