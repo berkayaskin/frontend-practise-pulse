@@ -9,7 +9,7 @@ export const hero: Hero = {
     'See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse absolutely free for 30 days.',
 }
 
-export type PricingBlockItem = {
+export type PricingBlock = {
   name: 'Basics' | 'Plus' | 'Premium'
   banner?: string
   title: string
@@ -20,7 +20,7 @@ export type PricingBlockItem = {
   features: string[]
 }
 
-export type PricingBlockList = PricingBlockItem[]
+export type PricingBlockList = PricingBlock[]
 
 export const pricingBlockList: PricingBlockList = [
   {
